@@ -22,7 +22,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     data = UserController.getUser();
-    print('user name ${data?.name}' );
     nameController.text = data?.name??'';
     super.initState();
   }
